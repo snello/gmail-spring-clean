@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Gmail Domain Stats",
-  "version": "0.1.0",
+  "name": "Gmail Spring Clean",
+  "version": "0.2.0",
   "description": "List the inbox domains with the most emails and optionally trash a domain.",
   "permissions": ["identity", "storage", "tabs"],
   "host_permissions": [
@@ -10,13 +10,13 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Domain Stats"
+    "default_title": "Spring Clean"
   },
   "background": {
     "service_worker": "background.js"
   },
   "oauth2": {
-    "client_id": "566925973229-hse23hod7hr9ulnf7q7cguqa98cti3r3.apps.googleusercontent.com",
+    "client_id": "566925973229-t207m2der7pkikph3fqll5lhej02c6ka.apps.googleusercontent.com",
     "scopes": ["https://www.googleapis.com/auth/gmail.modify"]
   }
 }
