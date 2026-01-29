@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Domain Stats</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Spring Clean</h1>
+            <div id="status" class="status">Scanning inbox…</div>
+
+            <div class="controls">
+                <label for="pages">Pages (500 msgs each)</label>
+                <input id="pages" type="number" min="1" max="50" value="5" />
+                <button id="rescan">Rescan</button>
+                <button id="purge-promos">Purge old promotions</button>
+            </div>
+
+            <div class="summary"><span id="processed">0</span> messages processed</div>
+
+            <div id="list" class="list"></div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
